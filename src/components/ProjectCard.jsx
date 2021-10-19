@@ -8,7 +8,7 @@ import {
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
-const ProjectCard = ({ props: { name, description, imageSrc } }) => {
+const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
   const [show, setShow] = useState(false);
   const [id, setId] = useState("");
 
@@ -62,8 +62,15 @@ const ProjectCard = ({ props: { name, description, imageSrc } }) => {
           >
             <Modal.Title>{name}</Modal.Title>
           </Modal.Header>
+          <img src={imageSrc} />
           <Modal.Body>{description}</Modal.Body>
           <Modal.Footer>
+            <Button
+              variant="primary"
+              onClick={() => window.open(url, "_blank")}
+            >
+              Visit
+            </Button>
             <Button
               variant="secondary"
               onClick={() => {
