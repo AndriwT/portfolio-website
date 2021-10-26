@@ -1,4 +1,5 @@
 .App {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -38,8 +39,9 @@
 }
 
 .nav {
-  background-color: #f4f4f4;
+  background-color: #184b53;
   box-shadow: 0px 3px 10px -8px rgba(0, 0, 0, 0.75);
+  border-bottom: 2px solid rgb(231, 106, 22);
 }
 
 .nav-logo {
@@ -79,3 +81,30 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.skill {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+  display: inline-block;
+}
+
+/* PROJECTS PAGE */
+
+.projects-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.projects-container {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects {
+  margin: 10px;
+  box-shadow: 0px 5px 15px 2px rgba(179, 179, 179, 0.75);
+}
+

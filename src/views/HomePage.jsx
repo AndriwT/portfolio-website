@@ -1,3 +1,7 @@
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import DesktopWindowsIcon from "@mui/icons-material/DesktopWindows";
+import FactCheckIcon from "@mui/icons-material/FactCheck";
+
 const HomePage = () => {
   return (
     <>
@@ -45,6 +49,27 @@ const HomePage = () => {
             </p>
             <img src="professional-portrait.png" />
           </div>
+        </div>
+      </div>
+      <div className="home-container">
+        <h1>Skills</h1>
+        <div className="skill">
+          <DesktopWindowsIcon
+            style={{ height: "100px", width: "100px", color: "coral" }}
+          />
+          <h4>Fullstack Development</h4>
+        </div>
+        <div className="skill">
+          <DesignServicesIcon
+            style={{ height: "100px", width: "100px", color: "coral" }}
+          />
+          <h4>Design</h4>
+        </div>
+        <div className="skill">
+          <FactCheckIcon
+            style={{ height: "100px", width: "100px", color: "coral" }}
+          />
+          <h4>Project Management</h4>
         </div>
       </div>
     </>
