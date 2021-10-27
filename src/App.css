@@ -1,3 +1,4 @@
+
 .App {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -39,9 +40,9 @@
 }
 
 .nav {
-  background-color: #184b53;
-  box-shadow: 0px 3px 10px -8px rgba(0, 0, 0, 0.75);
-  border-bottom: 2px solid rgb(231, 106, 22);
+  background-color: #002626;
+  box-shadow: 0px 3px 21px -7px rgb(0 0 0 / 75%);
+  border-bottom: 2px solid #E55812;
 }
 
 .nav-logo {
@@ -52,6 +53,7 @@
   text-align: center;
   margin-top: 50px;
   height: 70vh;
+  color: white;
 }
 
 .pitch-container {
@@ -70,7 +72,7 @@
   width: 270px;
   border-radius: 150px;
   border: 10px solid rgb(255, 255, 255);
-  box-shadow: 0px 5px 15px 2px rgba(179, 179, 179, 0.75);
+  box-shadow: 0px 5px 15px 2px rgba(12, 26, 19, 0.75);
 }
 
 .pitch p{

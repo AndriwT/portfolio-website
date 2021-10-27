@@ -55,19 +55,20 @@ const HomePage = () => {
         <h1>Skills</h1>
         <div className="skill">
           <DesktopWindowsIcon
-            style={{ height: "100px", width: "100px", color: "coral" }}
+            style={{ height: "100px", width: "100px", color: "#95C623" }}
           />
           <h4>Fullstack Development</h4>
         </div>
         <div className="skill">
           <DesignServicesIcon
-            style={{ height: "100px", width: "100px", color: "coral" }}
+            className="icon"
+            style={{ height: "100px", width: "100px", color: "#95C623" }}
           />
           <h4>Design</h4>
         </div>
         <div className="skill">
           <FactCheckIcon
-            style={{ height: "100px", width: "100px", color: "coral" }}
+            style={{ height: "100px", width: "100px", color: "#95C623" }}
           />
           <h4>Project Management</h4>
         </div>

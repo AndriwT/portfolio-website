@@ -7,7 +7,11 @@ const NavBar = () => {
     <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-light nav">
         <div className="container-fluid">
-          <a className="navbar-brand nav-logo" href="/">
+          <a
+            className="navbar-brand nav-logo"
+            href="/"
+            style={{ color: "white" }}
+          >
             Andriw Tapanes
           </a>
           <button
@@ -24,7 +28,12 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" class="nav-link active" aria-current="page">
+                <Link
+                  to="/"
+                  class="nav-link active"
+                  aria-current="page"
+                  style={{ color: "white" }}
+                >
                   About
                 </Link>
               </li>
@@ -33,6 +42,7 @@ const NavBar = () => {
                   to="/projects"
                   className="nav-link active"
                   aria-current="page"
+                  style={{ color: "white" }}
                 >
                   Projects
                 </Link>
