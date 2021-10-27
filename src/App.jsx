@@ -4,7 +4,7 @@ import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
-    <React.Fragment>
+    <React.Fragment id="app-container">
       <AppRouter />
     </React.Fragment>
   );
