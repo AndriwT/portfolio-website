@@ -20,7 +20,7 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
   return (
     <>
       <Card
-        sx={{ maxWidth: 345 }}
+        sx={{ maxWidth: 345, background: "#EFE7DA" }}
         onClick={() => {
           handleShow({ name });
         }}
@@ -55,6 +55,7 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
           }}
         >
           <Modal.Header
+            style={{ backgroundColor: "#EFE7DA" }}
             closeButton
             onClick={() => {
               setShow(false);
@@ -63,8 +64,10 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
             <Modal.Title>{name}</Modal.Title>
           </Modal.Header>
           <img src={imageSrc} />
-          <Modal.Body>{description}</Modal.Body>
-          <Modal.Footer>
+          <Modal.Body style={{ backgroundColor: "#EFE7DA" }}>
+            {description}
+          </Modal.Body>
+          <Modal.Footer style={{ backgroundColor: "#EFE7DA" }}>
             <Button
               variant="primary"
               onClick={() => window.open(url, "_blank")}

@@ -29,21 +29,6 @@ const HomePage = () => {
               was 1 year old! Growing up there until the age of 17 formed me
               into the kind and proper person I strive to be. Moving to the U.S.
               was a big step in my life, full of hardships and bumps on the
-              road.
-            </p>
-            <img src="professional-portrait.png" />
-          </div>
-        </div>
-      </div>
-      <div className="home-container">
-        <h1>My Journey</h1>
-        <div className="pitch-container">
-          <div className="pitch">
-            <p>
-              Originally born in Cuba, my family and I moved to Venezuela when I
-              was 1 year old! Growing up there until the age of 17 formed me
-              into the kind and proper person I strive to be. Moving to the U.S.
-              was a big step in my life, full of hardships and bumps on the
               road, but I wouldn't change my journey one bit! since it got me to
               where i'm proud to be today.
             </p>

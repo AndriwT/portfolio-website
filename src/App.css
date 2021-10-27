@@ -122,7 +122,20 @@
   left:0px;
   bottom:0px;
   color: rgb(156, 156, 156);
+}
+
+.footer-connect {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.footer-connect ul {
+  list-style-type: none
+}
+
+.footer-copyright {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  flex-direction: column;
 }
