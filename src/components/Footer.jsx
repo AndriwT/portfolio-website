@@ -1,3 +1,6 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -5,6 +8,7 @@ const Footer = () => {
         <h6>Let's connect!</h6>
         <ul>
           <li>
+            <GitHubIcon style={{ marginRight: "10px" }} />
             <a
               style={{ cursor: "pointer", color: "#95C623" }}
               onClick={() =>
@@ -15,6 +19,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
+            <LinkedInIcon style={{ marginRight: "10px" }} />
             <a
               style={{ cursor: "pointer", color: "#95C623" }}
               onClick={() =>
