@@ -26,7 +26,7 @@ const HomePage = () => {
         <h1>My Journey</h1>
         <Row className="pitch-container">
           <Col className="pitch">
-            <p>
+            <p style={{ textAlign: "center" }}>
               I started my career journey in the field of Media Arts. Eventually
               I shifted my focus to Project Management, during this time I
               became passionate with web development and enrolled in the
@@ -34,7 +34,7 @@ const HomePage = () => {
               gained well-rounded fundamental knowledge. I'm excited for the
               next chapter in my career path!
             </p>
-            <img src="professional-portrait.png" />
+            {/* <img src="professional-portrait.png" /> */}
           </Col>
         </Row>
       </Row>
