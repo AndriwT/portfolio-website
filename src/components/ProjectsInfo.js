@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: "Letty's Cakes Website",
+    name: "Letty's Cakes",
     description:
       "Website created for Letty's Cakes, a Venezuelan baking business. This website was created using React JavaScript, Node.js, express and MongoDB, for data storage. This website has full CRUD functionality, allowing the admin to create new desserts, display, edit and delete them, as well as allowing all other users to place orders for the admin to view and delete.",
     imageSrc: "/lettyscakes.png",
@@ -9,7 +9,7 @@ const projects = [
   {
     name: "Cat-astrophe",
     description:
-      "Cat-astrophe is a short game were you get to play as Catrina, a destructive cat that is left alone at home while her owner goes to the store. Your objective in this game is to break all possible objects inside the house before the Human gets back home, but not all objects are destroyable, have fun finding out which ones you can destroy! This little web game was developed using JavaScript Canvas.",
+      "Cat-astrophe is a short game where you get to play as Catrina, a destructive cat that is left alone at home while her owner goes to the store. Your objective in this game is to break all possible objects inside the house before the Human gets back home, but not all objects are destroyable, have fun finding out which ones you can destroy! This little web game was developed using JavaScript Canvas.",
     imageSrc: "/catastrophe.png",
     url: "https://andriwt.github.io/cat-astrophe/",
   },

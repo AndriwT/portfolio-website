@@ -20,10 +20,14 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
   return (
     <>
       <Card
-        sx={{ maxWidth: 345, background: "#EFE7DA" }}
+        sx={{
+          maxWidth: 345,
+          background: "#EFE7DA",
+        }}
         onClick={() => {
           handleShow({ name });
         }}
+        style={{ height: "325px", padding: "16px" }}
       >
         <CardActionArea>
           <CardMedia
@@ -36,7 +40,18 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
             <Typography gutterBottom variant="h5" component="div">
               {name}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ maxHeight: 80 }}
+              style={{
+                lineClamp: 3,
+                overflow: "scroll",
+                wordWrap: "break-word",
+                hyphens: "auto",
+                whiteSpace: "normal",
+              }}
+            >
               {description}
             </Typography>
           </CardContent>
@@ -61,20 +76,41 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
               setShow(false);
             }}
           >
-            <Modal.Title>{name}</Modal.Title>
+            <Modal.Title style={{ marginLeft: 15 }}>{name}</Modal.Title>
           </Modal.Header>
-          <img src={imageSrc} />
-          <Modal.Body style={{ backgroundColor: "#EFE7DA" }}>
+          <img
+            src={imageSrc}
+            style={{
+              backgroundColor: "#EFE7DA",
+              paddingLeft: 30,
+              paddingRight: 30,
+            }}
+          />
+          <Modal.Body
+            style={{
+              backgroundColor: "#EFE7DA",
+              paddingLeft: 30,
+              paddingRight: 30,
+            }}
+          >
             {description}
           </Modal.Body>
-          <Modal.Footer style={{ backgroundColor: "#EFE7DA" }}>
+          <Modal.Footer
+            style={{
+              backgroundColor: "#EFE7DA",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Button
+              className="visit-btn"
               variant="primary"
               onClick={() => window.open(url, "_blank")}
             >
               Visit
             </Button>
             <Button
+              className="close-btn"
               variant="secondary"
               onClick={() => {
                 setShow(false);
