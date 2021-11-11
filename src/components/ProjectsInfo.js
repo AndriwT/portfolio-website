@@ -27,6 +27,13 @@ const projects = [
     imageSrc: "/treesitos.png",
     url: "https://rocky-shore-48903.herokuapp.com/home",
   },
+  {
+    name: "AT-Pokedex",
+    description:
+      "AT-Pokedex is an old-school inspired encyclopedia for Pokemon. Using the public pokeapi, you can type the name or number of any of the 898 pokemon that exist and get immediate information back, including evolutions, triggers, stats, descriptions and more! Just like the real thing from the original anime. This app was developed as a practice for manipulating and fetching data with axios from a public API, as well as an HTML/CSS practice",
+    imageSrc: "/at-pokedex.png",
+    url: "https://at-pokedex.netlify.app/",
+  },
 ];
 
 export default projects;
