@@ -12,13 +12,16 @@ const HomePage = () => {
         <Row className="pitch-container">
           <Col className="pitch">
             <img src="professional-portrait.png" />
-            <p>
-              Hi There! My name is Andriw and I am a Digital Creator! <br />{" "}
-              Ever since I was a little kid I've thrived sharing with people
-              around me my work in the traditional arts, and now, shifting into
-              the technology field, my creations in the shape of beautiful,
-              functional and fun web applications!
-            </p>
+            <div>
+              <div className="pitch-background"></div>
+              <p style={{ marginLeft: "50px" }}>
+                Hi There! My name is Andriw and I am a Digital Creator! <br />{" "}
+                Ever since I was a little kid I've thrived sharing with people
+                around me my work in the traditional arts, and now, shifting
+                into the technology field, my creations in the shape of
+                beautiful, functional and fun web applications!
+              </p>
+            </div>
           </Col>
         </Row>
       </Row>
@@ -26,6 +29,7 @@ const HomePage = () => {
         <h1>My Journey</h1>
         <Row className="pitch-container">
           <Col className="pitch">
+            <div className="pitch-background" style={{ height: "280px" }}></div>
             <p style={{ textAlign: "center" }}>
               I started my career journey in the field of Media Arts. Eventually
               I shifted my focus to Project Management, during this time I
@@ -42,26 +46,26 @@ const HomePage = () => {
         <h1>Skills</h1>
         <div className="skill">
           <DesktopWindowsIcon
-            style={{ height: "100px", width: "100px", color: "#95C623" }}
+            style={{ height: "100px", width: "100px", color: "#E63946" }}
           />
           <h4>Fullstack Development</h4>
         </div>
         <div className="skill">
           <ImportantDevicesIcon
-            style={{ height: "100px", width: "100px", color: "#95C623" }}
+            style={{ height: "100px", width: "100px", color: "#E63946" }}
           />
           <h4>UX/UI</h4>
         </div>
         <div className="skill">
           <DesignServicesIcon
             className="icon"
-            style={{ height: "100px", width: "100px", color: "#95C623" }}
+            style={{ height: "100px", width: "100px", color: "#E63946" }}
           />
           <h4>Design</h4>
         </div>
         <div className="skill">
           <FactCheckIcon
-            style={{ height: "100px", width: "100px", color: "#95C623" }}
+            style={{ height: "100px", width: "100px", color: "#E63946" }}
           />
           <h4>Project Management</h4>
         </div>

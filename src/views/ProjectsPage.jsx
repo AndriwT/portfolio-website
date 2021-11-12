@@ -1,7 +1,8 @@
 import ProjectCard from "../components/ProjectCard";
 import projects from "../components/ProjectsInfo";
+import Grow from "@material-ui/core/Grow";
+
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 const ProjectsPage = () => {
   return (
@@ -11,12 +12,26 @@ const ProjectsPage = () => {
         <div className="projects-mapping">
           {projects &&
             projects.map((project, i) => {
+              let time = 0;
+              const variableTime = () => {
+                if (i > 10) {
+                  time = 5000;
+                } else {
+                  time = (i + 1) * 500;
+                }
+              };
+              variableTime();
+
               return (
-                <Fade top>
+                <Grow
+                  in={true}
+                  style={{ transformOrigin: "center top" }}
+                  timeout={time}
+                >
                   <div key={i} className="projects">
                     <ProjectCard props={project} />
                   </div>
-                </Fade>
+                </Grow>
               );
             })}
         </div>

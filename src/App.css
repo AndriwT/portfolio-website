@@ -39,10 +39,14 @@
   }
 }
 
+h1 {
+  color: #1D3557;
+}
+
 .nav {
-  background-color: #002626;
+  background-color: #457B9D;
   box-shadow: 0px 3px 21px -7px rgb(0 0 0 / 75%);
-  border-bottom: 2px solid #E55812;
+  border-bottom: 2px solid #E63946;
 }
 
 .nav-logo {
@@ -52,7 +56,7 @@
 .home-container {
   text-align: center;
   margin-top: 50px !important;
-  color: white;
+  color: #1D3557;
 }
 
 .pitch-container {
@@ -67,11 +71,22 @@
   margin-top: 50px;
 }
 
+.pitch-background {
+  position: absolute;
+  z-index: -1;
+  width: 500px;
+  height: 250px;
+  transform: skew(15deg);
+  background: #A8DADC;
+  margin-top: 20px;
+  box-shadow: 4px 8px 0px 8px #457B9D;
+}
+
 .pitch img{
   width: 270px;
   border-radius: 150px;
-  border: 10px solid rgb(255, 255, 255);
-  box-shadow: 0px 5px 15px 2px rgba(12, 26, 19, 0.75);
+  border: 10px solid #E63946;
+  /* box-shadow: 0px 5px 15px 2px rgba(12, 26, 19, 0.75); */
 }
 
 .pitch p{
@@ -119,8 +134,8 @@
 }
 
 .visit-btn {
-  background: #E55812 !important;
-  border: 1px solid #E55812 !important;
+  background: #E63946 !important;
+  border: 1px solid #E63946 !important;
   width: 90%;
 
 }
@@ -132,13 +147,13 @@
 /* FOOTER */
 
 .footer-container {
-  background: #002626;
+  background: #457B9D;
   width: 100%;
   min-height: 80px;
   position: static;
   left:0px;
   bottom:0px;
-  color: rgb(156, 156, 156);
+  color: #1D3557;
 }
 
 .footer-connect {

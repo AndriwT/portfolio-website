@@ -22,7 +22,7 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
       <Card
         sx={{
           maxWidth: 345,
-          background: "#EFE7DA",
+          background: "#A8DADC",
         }}
         onClick={() => {
           handleShow({ name });
@@ -70,7 +70,7 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
           }}
         >
           <Modal.Header
-            style={{ backgroundColor: "#EFE7DA" }}
+            style={{ backgroundColor: "#A8DADC" }}
             closeButton
             onClick={() => {
               setShow(false);
@@ -81,14 +81,14 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
           <img
             src={imageSrc}
             style={{
-              backgroundColor: "#EFE7DA",
+              backgroundColor: "#A8DADC",
               paddingLeft: 30,
               paddingRight: 30,
             }}
           />
           <Modal.Body
             style={{
-              backgroundColor: "#EFE7DA",
+              backgroundColor: "#A8DADC",
               paddingLeft: 30,
               paddingRight: 30,
             }}
@@ -97,7 +97,7 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
           </Modal.Body>
           <Modal.Footer
             style={{
-              backgroundColor: "#EFE7DA",
+              backgroundColor: "#A8DADC",
               display: "flex",
               justifyContent: "center",
             }}
