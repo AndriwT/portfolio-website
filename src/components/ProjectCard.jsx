@@ -22,12 +22,22 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
       <Card
         sx={{
           maxWidth: 345,
-          background: "#A8DADC",
+          background: "#CAEBF2",
+          color: "#457B9D",
         }}
         onClick={() => {
           handleShow({ name });
         }}
-        style={{ height: "325px", padding: "16px" }}
+        style={{
+          height: "325px",
+          padding: "16px",
+          webkitBorderRadius: "20px",
+          mozBorderRadius: "20px",
+          borderRadius: "10px",
+          webkitBoxShadow: "rgba(0,0,0,0.8) 0px 0 10px",
+          mozBoxShadow: "rgba(0,0,0,0.8) 0 0 5px",
+          boxShadow: "rgba(0,0,0,0.3) 0 5px 10px",
+        }}
       >
         <CardActionArea>
           <CardMedia
@@ -70,25 +80,27 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
           }}
         >
           <Modal.Header
-            style={{ backgroundColor: "#A8DADC" }}
+            style={{ backgroundColor: "#CAEBF2" }}
             closeButton
             onClick={() => {
               setShow(false);
             }}
           >
-            <Modal.Title style={{ marginLeft: 15 }}>{name}</Modal.Title>
+            <Modal.Title style={{ marginLeft: 15, color: "#457B9D" }}>
+              {name}
+            </Modal.Title>
           </Modal.Header>
           <img
             src={imageSrc}
             style={{
-              backgroundColor: "#A8DADC",
+              backgroundColor: "#CAEBF2",
               paddingLeft: 30,
               paddingRight: 30,
             }}
           />
           <Modal.Body
             style={{
-              backgroundColor: "#A8DADC",
+              backgroundColor: "#CAEBF2",
               paddingLeft: 30,
               paddingRight: 30,
             }}
@@ -97,7 +109,7 @@ const ProjectCard = ({ props: { name, description, imageSrc, url } }) => {
           </Modal.Body>
           <Modal.Footer
             style={{
-              backgroundColor: "#A8DADC",
+              backgroundColor: "#CAEBF2",
               display: "flex",
               justifyContent: "center",
             }}

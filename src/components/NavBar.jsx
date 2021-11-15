@@ -10,7 +10,7 @@ const NavBar = () => {
           <a
             className="navbar-brand nav-logo"
             href="/"
-            style={{ color: "white" }}
+            style={{ color: "white", fontSize: "30px", marginRight: "50px" }}
           >
             Andriw Tapanes
           </a>

@@ -42,34 +42,36 @@ const HomePage = () => {
           </Col>
         </Row>
       </Row>
-      <div className="home-container" style={{ marginBottom: "50px" }}>
+      <Col className="skills-container">
         <h1>Skills</h1>
-        <div className="skill">
-          <DesktopWindowsIcon
-            style={{ height: "100px", width: "100px", color: "#E63946" }}
-          />
-          <h4>Fullstack Development</h4>
+        <div className="skills" style={{ marginBottom: "50px" }}>
+          <div className="skill">
+            <DesktopWindowsIcon
+              style={{ height: "100px", width: "100px", color: "#FF3B3F" }}
+            />
+            <h4>Fullstack Development</h4>
+          </div>
+          <div className="skill">
+            <ImportantDevicesIcon
+              style={{ height: "100px", width: "100px", color: "#FF3B3F" }}
+            />
+            <h4>UX/UI</h4>
+          </div>
+          <div className="skill">
+            <DesignServicesIcon
+              className="icon"
+              style={{ height: "100px", width: "100px", color: "#FF3B3F" }}
+            />
+            <h4>Design</h4>
+          </div>
+          <div className="skill">
+            <FactCheckIcon
+              style={{ height: "100px", width: "100px", color: "#FF3B3F" }}
+            />
+            <h4>Project Management</h4>
+          </div>
         </div>
-        <div className="skill">
-          <ImportantDevicesIcon
-            style={{ height: "100px", width: "100px", color: "#E63946" }}
-          />
-          <h4>UX/UI</h4>
-        </div>
-        <div className="skill">
-          <DesignServicesIcon
-            className="icon"
-            style={{ height: "100px", width: "100px", color: "#E63946" }}
-          />
-          <h4>Design</h4>
-        </div>
-        <div className="skill">
-          <FactCheckIcon
-            style={{ height: "100px", width: "100px", color: "#E63946" }}
-          />
-          <h4>Project Management</h4>
-        </div>
-      </div>
+      </Col>
     </Container>
   );
 };
