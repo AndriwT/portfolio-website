@@ -1,13 +1,104 @@
+:root {
+  --paper: #f3efe6;
+  --paper-raised: #faf7f1;
+  --ink: #161513;
+  --ink-soft: #3a3632;
+  --muted: #5c564e;
+  --line: rgba(22, 21, 19, 0.14);
+  --accent: #9d341f;
+  --accent-bright: #c4492c;
+  --frame: #e4dfd4;
+  --shadow: 0 30px 70px rgba(22, 21, 19, 0.18);
+  --serif: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --nav-h: 76px;
+  --shell: min(1120px, calc(100% - 48px));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #f0c7bc;
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  transform: translateY(-140%);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 10px 14px;
+  border-radius: 999px;
+  z-index: 80;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
